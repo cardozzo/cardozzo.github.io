@@ -1,9 +1,16 @@
 body{
     margin: 0;
+    padding: 0;
+    background-image: url(Fish-Tank.jpg);
+    background-attachment: fixed;
+    background-position:left;
+    background-size: cover;
+    
 }
 body p::-moz-selection, span::-moz-selection, h1::-moz-selection, a::-moz-selection{
     background: rgba(255,255,255,0.2)
 }
+
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -56,7 +63,9 @@ body p::-moz-selection, span::-moz-selection, h1::-moz-selection, a::-moz-select
     height: 100%;
     position: relative;
 }
-
+video{
+    filter:saturate(200%)
+}
 #titulo {
     position: absolute;
     color: white;
@@ -76,47 +85,50 @@ body p::-moz-selection, span::-moz-selection, h1::-moz-selection, a::-moz-select
         color:rgba(255,255,255,0.3)
 }
 footer{
-    background-image: url(Fish-Tank.jpg);
-    height:500px;
-    width: 100%;
-    margin-top: 0pc;
-    background-attachment: fixed;
-    background-position:left;
-    background-size: cover;
-    padding-top: 5pc
+    padding-top: 4pc;
+    
 }
 footer center {
-    color:rgba(255,255,255,0.4) ;
-    width: 200px;
-    margin: auto;
+    color:rgba(255,255,255,0.4);
 }
 footer .flex{
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    padding-bottom: 3pc
+}
+.flex div{
+    width: 30%;
+    height: 300px;
 }
 
 #yt iframe{
-    width: 90%;
     border-bottom: 5px solid white;
+    width: 100%;
+    height: 80%
 }
 
 
 #about p{
-    width: 90%;
     color:rgba(255,255,255,0.5);
-    text-align: center;
+    text-align: justify;
+    padding: 5px;
+    letter-spacing: 1px
 }
 
-#card{
-    width: 90%
-}
 
 @media screen and (max-width:615px){
     .flex{
         flex-direction: column;
         justify-content: center;
     }
-    .flex div{ width:100% !important;}
+    .flex div{ width:100% !important;height: 100%;margin-top: 1pc}
+    #yt iframe{
+        width: 100%
+    }
+    #about p{
+        padding: 5px;
+        text-align: left
+    }
 }
