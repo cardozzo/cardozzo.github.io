@@ -51,32 +51,29 @@
       
     </div>
   </div>
-  <p id="footer"><center>&copy BRUNO FRANCISCO MMXVIII. <br>FEITO COM ❤</center></p>
+  <p id="footer"><center>&copy BRUNO FRANCISCO MMXVIII. <br>FEITO COM &hearts;</center></p>
 </footer>
 <script>
+
+   
 $( document ).ready(function() {
-  $(function() {
-   $('<iframe />').delay(1000).attr('src', 'https://www.youtube.com/embed/wZZqN2F_zq4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media'); });
   $('#plus a').click(function(){
     $('#mais').slideDown(200);
   });
 });
+
   //jQuery is required to run this code
 $( document ).ready(function() {
-
     scaleVideoContainer();
-
     initBannerVideoSize('.video-container .poster img');
     initBannerVideoSize('.video-container .filter');
     initBannerVideoSize('.video-container video');
-
     $(window).on('resize', function() {
         scaleVideoContainer();
         scaleBannerVideoSize('.video-container .poster img');
         scaleBannerVideoSize('.video-container .filter');
         scaleBannerVideoSize('.video-container video');
     });
-
 });
 
 function scaleVideoContainer() {
@@ -124,6 +121,8 @@ function scaleBannerVideoSize(element){
 
     });
 }
+$(function() {
+   $('iframe').attr('src', 'https://www.youtube.com/embed/wZZqN2F_zq4?rel=0&amp;controls=0&amp;showinfo=0"'); });
 </script>
 </body>
 
