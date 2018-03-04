@@ -122,4 +122,5 @@ footer .flex{
     #yt iframe{
         width:300px;
         position:relative;
+        height: auto;
 }
