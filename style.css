@@ -1,0 +1,122 @@
+body{
+    margin: 20px;
+    background-color: #000
+}
+body p::-moz-selection, span::-moz-selection, h1::-moz-selection, a::-moz-selection{
+    background: rgba(255,255,255,0.2)
+}
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.hidden img{
+  display: none;
+}
+
+.hidden{
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#titulo {
+    position: absolute;
+    color: white;
+    top: 35%;
+    z-index: 2;
+    width: 100%;
+}
+
+#titulo h1, a, span, p, center{
+    font-weight: 100;
+    font-family: source sans pro;
+    color: white;
+    text-decoration: none;
+}
+
+#titulo span{
+        color:rgba(255,255,255,0.3)
+}
+footer{
+    background-image: url(Fish-Tank.jpg);
+    height:500px;
+    width: 100%;
+    margin-top: 0pc;
+    background-attachment: fixed;
+    background-position:left;
+    background-size: cover;
+    padding-top: 5pc
+}
+footer center {
+    color:rgba(255,255,255,0.4) ;
+    width: 200px;
+    margin: auto;
+}
+footer .flex{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+#yt iframe{
+    width: 400px;
+    height: 235px;
+    border-bottom: 5px solid white;
+}
+
+
+#about p{
+    width: 400px;
+    color:rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+#card{
+    width: 400px
+}
+
+@media screen and (max-width:615px){
+    .flex{
+        flex-direction: column;
+    }
+}
