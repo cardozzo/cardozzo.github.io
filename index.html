@@ -37,7 +37,7 @@
 <footer>
   <div class="flex">
     <div id="yt">
-      <iframe src="https://www.youtube.com/embed/wZZqN2F_zq4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe src="" allowfullscreen></iframe>
     </div>
     <div id="about">
       <p id="plus">
@@ -55,6 +55,8 @@
 </footer>
 <script>
 $( document ).ready(function() {
+  $(function() {
+   $('<iframe />').delay(1000).attr('src', 'https://www.youtube.com/embed/wZZqN2F_zq4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media'); });
   $('#plus a').click(function(){
     $('#mais').slideDown(200);
   });
