@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    margin-top: -1pc;
+    padding: 0;
+    background-image: url(Fish-Tank.jpg);
+    background-attachment: fixed;
+    background-position:left;
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-repeat: no-repeat;
+}
+body p::-moz-selection, span::-moz-selection, h1::-moz-selection, a::-moz-selection{
+    background: rgba(255,255,255,0.2)
+}
+
+
+#titulo {
+    position: relative;
+    color: white;
+    z-index: 2;
+    width: 20%;
+    margin-bottom: 2pc;
+    margin-top: 5pc;
+    height: 400px;
+    box-shadow: 10px 10px 50px rgba(0,0,0,.2);
+    background-color: rgba(255,255,255,0.1)
+}
+
+#titulo h1, a, span, p, center{
+    font-weight: 100;
+    font-family: source sans pro;
+    color: white;
+    text-decoration: none;
+}
+
+#titulo span{
+    color:rgba(255,255,255,0.3)
+}
+footer{
+    padding-top: 4pc;
+    
+}
+footer center {
+    color:rgba(255,255,255,0.4);
+}
+footer .flex{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3pc
+}
+.flex div{
+    width: 30%;
+    height: 300px;
+}
+
+#yt iframe{
+    border-bottom: 5px solid #4ec5b6 !important;
+    width: 100%;
+    height: 80%;
+    border: 0;
+}
+
+
+#about p{
+    color:rgba(255,255,255,0.5);
+    text-align: justify;
+    padding: 5px;
+    letter-spacing: 1px
+}
+
+
+@media screen and (max-width:615px){
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flex div{ width:100% !important;height: 100%;margin-top: 1pc}
+    #yt iframe{
+        width: 100%
+    }
+    #about p{
+        padding: 5px;
+        text-align: left
+    }
+}
