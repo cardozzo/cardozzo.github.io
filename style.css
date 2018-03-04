@@ -98,25 +98,24 @@ footer .flex{
 }
 
 #yt iframe{
-    width: 400px;
-    height: 235px;
+    width: 90%;
     border-bottom: 5px solid white;
 }
 
 
 #about p{
-    width: 400px;
+    width: 90%;
     color:rgba(255,255,255,0.5);
     text-align: center;
 }
 
 #card{
-    width: 400px
+    width: 90%
 }
 
 @media screen and (max-width:615px){
     .flex{
         flex-direction: column;
     }
-    .flex div{ width:280px !important;}
+    .flex div{ width:100% !important;}
 }
