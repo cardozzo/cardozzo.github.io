@@ -119,6 +119,8 @@ footer .flex{
     .flex{
         flex-direction: column;
     }
+    .flex div{ width:280px;}
+
     #yt iframe{
         width:300px;
         position:relative;
